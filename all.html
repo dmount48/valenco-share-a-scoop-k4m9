@@ -238,14 +238,25 @@ html[data-nofrag] .frag{opacity:1;transform:none;transition:none}
 .tl .what{margin:0;font-size:var(--fs-small);line-height:1.55;color:var(--bone-72)}
 
 /* ---------- investment ---------- */
-.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--u) * 3.6);margin-top:calc(var(--u) * 3)}
-.tier{border-top:1px solid var(--ink-14);padding-top:calc(var(--u) * 2.2)}
-.tier .tag{font-family:var(--body);font-weight:500;font-size:var(--fs-eyebrow);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 calc(var(--u) * 1.2);min-height:1.4em}
-.tier h3{font-family:var(--display);font-weight:400;font-size:clamp(20px,calc(var(--u) * 2.2),34px);line-height:1.1;margin:0}
-.tier .price{font-family:var(--display);font-weight:300;font-size:clamp(30px,calc(var(--u) * 4.2),64px);line-height:1;margin:calc(var(--u) * 1.4) 0 calc(var(--u) * 1.4);font-variant-numeric:lining-nums;letter-spacing:-.01em}
-.tier .price small{font-family:var(--body);font-size:var(--fs-small);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-52);margin-left:.6em;font-weight:500}
-.tier p{margin:0;font-size:var(--fs-body);line-height:1.55;color:var(--ink-70)}
-.tier--lead{border-top-color:var(--gold-deep)}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(var(--u) * 3.2);margin-top:calc(var(--u) * 2);align-items:stretch}
+.tier{border-top:1px solid var(--ink-14);padding-top:calc(var(--u) * 1.8);display:flex;flex-direction:column;min-width:0}
+.tier .tag{font-family:var(--body);font-weight:500;font-size:var(--fs-eyebrow);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 calc(var(--u) * 1);min-height:1.4em}
+.tier h3{font-family:var(--display);font-weight:400;font-size:clamp(17px,calc(var(--u) * 1.78),27px);line-height:1.1;margin:0}
+.tier .price{font-family:var(--display);font-weight:300;font-size:clamp(24px,calc(var(--u) * 2.85),43px);line-height:1;margin:calc(var(--u) * .85) 0 calc(var(--u) * .7);font-variant-numeric:lining-nums;letter-spacing:-.01em}
+.tier .price small{font-family:var(--body);font-size:var(--fs-small);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-52);margin-left:.5em;font-weight:500}
+.tier p{margin:0;font-size:var(--fs-body);line-height:1.5;color:var(--ink-70)}
+.tier .promise{font-family:var(--display);font-size:clamp(14px,calc(var(--u) * 1.36),21px);line-height:1.28;color:var(--ink);margin:0 0 calc(var(--u) * 1.05)}
+.tier .inc-t{list-style:none;margin:0 0 calc(var(--u) * 1.1);padding:0}
+.tier .inc-t li{
+  position:relative;padding:calc(var(--u) * .5) 0 calc(var(--u) * .5) calc(var(--u) * 1.75);
+  border-top:1px solid var(--ink-08);
+  font-size:var(--fs-small);line-height:1.38;color:var(--ink-70);
+}
+.tier .inc-t li:first-child{border-top:0}
+.tier .inc-t li::before{content:"";position:absolute;left:0;top:calc(var(--u) * 1.12);width:calc(var(--u) * .85);height:1px;background:var(--gold-deep)}
+.tier .inc-t li:first-child::before{top:calc(var(--u) * .62)}
+.tier .creates{margin-top:auto;padding-top:calc(var(--u) * .95);border-top:1px solid var(--ink-14);font-family:var(--display);font-size:clamp(13.5px,calc(var(--u) * 1.3),20px);line-height:1.3;color:var(--gold-deep)}
+.tier--lead{border-top-color:var(--gold-deep);border-top-width:2px}
 
 /* ---------- contact ---------- */
 .contact{font-size:var(--fs-body);line-height:1.72;color:var(--ink-70)}
@@ -1017,35 +1028,60 @@ So here's how it actually runs, in order. First week is pre production. Campaign
 <!--
 SPEAKER NOTES, SLIDE, INVESTMENT
 
-There are three ways in, and I'll tell you which one I think fits. The Creator Test is there if you want to see how we work before the bigger commitment. The Launch Bundle is the one that matches what you described on the first call, a bundle, one or two days. And the monthly lane is what keeps it fed afterward, and honestly I'd rather you not buy that today, because there's nothing to maintain until the first campaign is out. Half at signing, half at delivery. These are founding prices, because you're the first client we're running this package for. Which of those three is closest to what you two had in your head?
+Three ways in, and I'll tell you straight which one I think fits. The Creator Test is there if you want to see how we work before the bigger commitment. One day, six pieces, tracking on. The Launch Bundle is the one I'd recommend, and it's what you described on the first call, a bundle, one or two days. Two shoot days, and here's the part I want you to actually hear. That's a hero spot, three cutdowns, six openers to test against each other, ten verticals, and stills that replace the renders on your product pages. From two days. That is two to three months of content, and a page at the end of the month that tells you which of those pieces sold. The monthly lane keeps it fed after that, and honestly I'd rather you not buy that today, because there's nothing to maintain until the first campaign is out. Half at signing, half at delivery. And these are founding prices, because you're the first client we run this package for.
 -->
 <section class="slide slide--bone" id="s-invest">
   <div class="pane">
-    <p class="eyebrow">Three ways in</p>
-    <h2 class="d-m" style="max-width:24ch">Pick the one that matches how fast you want to move</h2>
+    <p class="eyebrow">Investment</p>
+    <h2 class="d-m" style="max-width:24ch">Here is what each one builds.</h2>
     <div class="tiers">
       <div class="tier frag">
         <p class="tag">Starter</p>
         <h3>Creator Test</h3>
         <p class="price">$3,300</p>
-        <p>Prove the format before the bigger commitment. One capture day, six native verticals, tracking on.</p>
+        <p class="promise">See how we work before the bigger commitment.</p>
+        <ul class="inc-t">
+          <li>One capture day</li>
+          <li>Six native verticals for Meta, TikTok, and TikTok Shop</li>
+          <li>Meta and TikTok pixels installed and verified</li>
+          <li>One link naming rule, so every click is traceable</li>
+          <li>A three email welcome flow</li>
+        </ul>
+        <p class="creates">Six pieces you can run, and a read on whether the format works.</p>
       </div>
       <div class="tier tier--lead frag">
         <p class="tag">Recommended</p>
         <h3>Share a Scoop Launch Bundle</h3>
         <p class="price">$11,500</p>
-        <p>The campaign and the system that tells you which part of it sold. Two shoot days, about twenty pieces.</p>
+        <p class="promise">The campaign, and the system that tells you which part of it sold.</p>
+        <ul class="inc-t">
+          <li>Two shoot days. Gym first, community second</li>
+          <li>One hero spot, three cutdowns, six hook openers</li>
+          <li>Ten verticals for TikTok Shop and organic</li>
+          <li>Stills that replace the renders on your product pages</li>
+          <li>Founder soundbites, athlete soundbites once releases clear</li>
+          <li>Tracking, email flows, proof capture, and a 30 day report</li>
+        </ul>
+        <p class="creates">Twenty pieces, two to three months of content, and a page that tells you which ones sold.</p>
       </div>
       <div class="tier frag">
         <p class="tag">Ongoing</p>
         <h3>Monthly Content and Backend Lane</h3>
         <p class="price">$5,500<small>per month</small></p>
-        <p>Keeps the engine fed after the launch. Not for today. Nothing to maintain until the first campaign is out.</p>
+        <p class="promise">Keeps the engine fed once the campaign is running.</p>
+        <ul class="inc-t">
+          <li>One capture day every month</li>
+          <li>Eight verticals a month</li>
+          <li>Nurture upkeep on the flows you already run</li>
+          <li>Creator briefs, so your paid creators shoot on message</li>
+          <li>A monthly scorecard</li>
+        </ul>
+        <p class="creates">New material every month. Not for today, there is nothing to maintain yet.</p>
       </div>
     </div>
-    <hr class="rule" style="margin-top:calc(var(--u) * 3.4)">
-    <p class="small frag" style="margin-top:calc(var(--u) * 1.8);max-width:80ch">50 percent at signing, 50 percent at delivery. This is not ad spend. The media budget stays yours.</p>
-    <p class="small frag" style="margin-top:calc(var(--u) * .8);max-width:80ch">Founding prices. You are the first client we run this package for.</p>
+    <hr class="rule" style="margin-top:calc(var(--u) * 1.5)">
+    <p class="small frag" style="margin-top:calc(var(--u) * 1);max-width:96ch">50 percent at signing, 50 percent at delivery. This is not ad spend. The media budget stays yours.</p>
+    <p class="small frag" style="margin-top:calc(var(--u) * .5);max-width:96ch">Founding prices. You are the first client we run this package for.</p>
   </div>
 </section>
 
