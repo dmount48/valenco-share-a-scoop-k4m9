@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Valenco, presenter notes</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0E10">
+<meta name="description" content="Speaker notes and the question to ask on every slide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bone:#F4F1EA; --ink:#0B0E10; --ink-2:#15191C;
+  --gold:#C9A877; --gold-deep:#A8875A; --bronze:#B1560F; --teal:#1C3A40;
+  --bone-72:rgba(244,241,234,.74); --bone-52:rgba(244,241,234,.54); --bone-18:rgba(244,241,234,.18);
+  --display:"Cormorant Garamond",Georgia,serif;
+  --body:"Manrope","Avenir Next",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--ink);color:var(--bone);font-family:var(--body);font-weight:300;-webkit-text-size-adjust:100%}
+.wrap{max-width:760px;margin:0 auto;padding:28px 20px 100px}
+header{padding:14px 0 10px;border-bottom:1px solid var(--bone-18);margin-bottom:8px}
+header .k{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:500;margin:0}
+header h1{font-family:var(--display);font-weight:300;font-size:clamp(30px,7vw,44px);line-height:1.08;margin:.35em 0 .3em}
+header p{margin:0;color:var(--bone-72);font-size:15px;line-height:1.55}
+.rules{margin:22px 0 8px;padding:16px 18px;border:1px solid var(--bronze);background:rgba(177,86,15,.08)}
+.rules p{margin:0 0 .5em;font-size:14.5px;line-height:1.55;color:var(--bone)}
+.rules p:last-child{margin:0}
+.rules b{color:var(--gold)}
+.toc{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0 4px}
+.toc a{font-family:var(--mono);font-size:12px;color:var(--bone-52);text-decoration:none;border:1px solid var(--bone-18);padding:6px 9px}
+.toc a:hover{color:var(--gold);border-color:var(--gold-deep)}
+.s{padding:26px 0;border-bottom:1px solid var(--bone-18)}
+.num{font-family:var(--mono);font-size:13px;letter-spacing:.16em;color:var(--gold)}
+.num .of{color:var(--bone-52)}
+.s h2{font-family:var(--display);font-weight:400;font-size:clamp(24px,5.6vw,32px);line-height:1.12;margin:.28em 0 .1em}
+.head{font-family:var(--display);font-size:clamp(17px,4vw,21px);line-height:1.3;color:var(--gold-deep);margin:0 0 .7em}
+.purpose{font-size:14px;line-height:1.5;color:var(--bone-52);margin:0 0 16px}
+.talk,.ask,.listen{margin:0 0 12px;padding:13px 15px;border-left:1px solid var(--bone-18)}
+.talk{background:rgba(244,241,234,.035)}
+.ask{background:rgba(201,168,119,.10);border-left-color:var(--gold)}
+.listen{background:rgba(28,58,64,.30);border-left-color:var(--teal)}
+.lbl{display:block;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:600;margin-bottom:7px}
+.talk .lbl{color:var(--bone-52)}
+.ask .lbl{color:var(--gold)}
+.listen .lbl{color:#8FB6BE}
+.talk p,.ask p,.listen p{margin:0;font-size:15.5px;line-height:1.62;color:var(--bone)}
+.ask p{font-family:var(--display);font-size:clamp(18px,4.4vw,22px);line-height:1.36}
+.listen p{font-size:14.5px;color:var(--bone-72)}
+.top{position:fixed;right:16px;bottom:16px;z-index:20;font-family:var(--mono);font-size:11px;letter-spacing:.14em;
+  color:var(--bone-72);background:rgba(11,14,16,.86);border:1px solid var(--bone-18);padding:10px 14px;text-decoration:none;
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+footer{padding:26px 0 0;color:var(--bone-52);font-size:13.5px;line-height:1.6}
+footer a{color:var(--gold)}
+@media print{
+  html,body{background:#fff;color:#111}
+  .top{display:none} .toc{display:none}
+  .s{break-inside:avoid;border-bottom:1px solid #ccc}
+  .talk,.ask,.listen{border-left:2px solid #999;background:none}
+  .num,.ask .lbl,.head{color:#8a6a34} .talk p,.ask p,.listen p,.s h2{color:#111}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="k">Mount Up Media</p>
+  <h1>Valenco, presenter notes</h1>
+  <p>Adrianna, September 10. Deck on the shared screen, this on your phone. A question on every slide.</p>
+</header>
+
+<div class="rules">
+  <p><b>Do not quote the prices.</b> Dee has not signed off. Walk the value on slide 17, and if they push for a yes on price, say you are confirming the final number and following up today.</p>
+  <p><b>Do not say the word funnel.</b> Their About page rejects those tactics by name, and Ronin wrote that page.</p>
+  <p><b>Jake has never heard any of this.</b> He was not on the first call. Ask him something early and ask him something last.</p>
+  <p><b>Call out the AI frames before they do.</b> Slides 7, 8 and 10. Ronin runs ads, he will spot them in two seconds.</p>
+</div>
+
+<div class="toc"><a href="#s1">01</a><a href="#s2">02</a><a href="#s3">03</a><a href="#s4">04</a><a href="#s5">05</a><a href="#s6">06</a><a href="#s7">07</a><a href="#s8">08</a><a href="#s9">09</a><a href="#s10">10</a><a href="#s11">11</a><a href="#s12">12</a><a href="#s13">13</a><a href="#s14">14</a><a href="#s15">15</a><a href="#s16">16</a><a href="#s17">17</a><a href="#s18">18</a></div>
+
+<section class="s" id="s1">
+  <div class="num">01 <span class="of">of 18</span></div>
+  <h2>Title</h2>
+  <p class="head">Share a Scoop, and the system behind it</p>
+  <p class="purpose">Open the room. Do not present yet.</p>
+  <div class="talk"><span class="lbl">Say</span><p>So before I get into any of this, thank you both for making the time. Jake, this is the first time you and I have talked, so I want to hear from you as much as I want to show you anything. Everything in here came out of one conversation with Ronin and about a day of us reading your site line by line. The campaign is Ronin&#x27;s idea. We built the rest of it around his idea. If something in here is wrong, stop me, because I would rather fix it right now than after we shoot it.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Jake, this is the first time you and I have talked. Before I get into any of this, is there anything you want to make sure we cover?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>Whatever he says here is your close on slide 18. Write it down.</p></div>
+</section><section class="s" id="s2">
+  <div class="num">02 <span class="of">of 18</span></div>
+  <h2>What We Heard</h2>
+  <p class="head">Here is what you told us, in your own words</p>
+  <p class="purpose">Read their business back to them. Earn the right to keep talking.</p>
+  <div class="talk"><span class="lbl">Say</span><p>I&#x27;m not going to tell you what your own business is. I&#x27;m going to read back what Ronin told us, and you two tell me where I got it wrong. Third party testing on everything. High level MMA fighters, D1 programs. TikTok Shop just opened. Meta is set up and waiting on creative. And a bundle, one or two days of filming. One thing I want to get straight before we go further. The athletes you work with, do you pay any of them, or send free product? That answer changes how we shoot and what has to be on screen. And Jake, here&#x27;s my question for you. This is the first time we&#x27;ve talked. What&#x27;s the one thing this campaign has to do for you to call it a win?</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Tell me where I got it wrong. And Jake, what is the one thing this campaign has to do for you to call it a win?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>If Jake answers with a number, the Launch Bundle is the fit. If he answers with a feeling, lead with the community angle.</p></div>
+</section><section class="s" id="s3">
+  <div class="num">03 <span class="of">of 18</span></div>
+  <h2>The Real Problem</h2>
+  <p class="head">The store runs. The proof and the ad creative do not.</p>
+  <p class="purpose">Name the gap without insulting what Ronin built.</p>
+  <div class="talk"><span class="lbl">Say</span><p>So here&#x27;s what we actually found, and I want to be careful how I say it, because Ronin, you built more than most brands we walk into. Klaviyo, the review app, the affiliate program, subscriptions, the quiz, your own first touch tracking. That&#x27;s real and it&#x27;s running. What isn&#x27;t there yet is anything worth pushing through it. Judge.me is installed and the pages we checked run zero to five reviews, and most of the pictures are renders. Meaning the label is the most honest thing you own, and nobody has ever pointed a camera at it. Does that match how it feels from your side?</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Does that match how it feels from your side?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>If Ronin gets defensive, back up and re-credit what he built. He built more than most brands we walk into.</p></div>
+</section><section class="s" id="s4">
+  <div class="num">04 <span class="of">of 18</span></div>
+  <h2>Six channels</h2>
+  <p class="head">Six channels working, none of them feeding each other</p>
+  <p class="purpose">Show that everything works a little and nothing hands off.</p>
+  <div class="talk"><span class="lbl">Say</span><p>Right now you&#x27;ve got six things selling at once. Paid creators, reps walking into gyms, the MMA outreach Ronin said is mostly Jake, TikTok Shop, your own posts, and flyers on foot. Jake, is that right on the outreach? Every one of those works a little. None of them hand anything to the next one. Meaning the rep who closes a gym doesn&#x27;t feed the ad account, and the ad account has never run, so it isn&#x27;t feeding anything either. The hustle is working. There&#x27;s just nothing sitting in the middle holding it together.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Your reps are calling gyms and clinics. How do you track what they have called and what closed?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>If the answer is a spreadsheet or nothing, that is a real gap and it is cheap for us to fix.</p></div>
+</section><section class="s" id="s5">
+  <div class="num">05 <span class="of">of 18</span></div>
+  <h2>What is sitting unused</h2>
+  <p class="head">Six things you already own that are not finished yet</p>
+  <p class="purpose">Six owned assets, all unfinished. Observations, not accusations.</p>
+  <div class="talk"><span class="lbl">Say</span><p>These are six things you&#x27;re already paying for, in time or in money, that aren&#x27;t finished. Judge.me is installed and the pages we checked run zero to five reviews. Meta is set up and idle. Your affiliates get twelve percent and a page that promises them creative, and I want to ask whether that kit actually exists yet. Your reps knock on doors, and I don&#x27;t know what they leave behind. And your fighters show up on your own site as event photography with somebody else&#x27;s watermark on it. Do you hold rights to those, or are they the promotion&#x27;s? I&#x27;m not going to put a dollar figure on any of this, because I don&#x27;t have your numbers. But you can see the shape of it.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Your site shows no reviews on almost every product. Is anything asking customers for one after they buy? And does that affiliate creative kit actually exist yet?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>Judge.me is already installed. If nobody turned the review request on, that is free money and you can tell him so.</p></div>
+</section><section class="s" id="s6">
+  <div class="num">06 <span class="of">of 18</span></div>
+  <h2>The path we recommend</h2>
+  <p class="head">One shoot, two outputs, and the loop that keeps paying</p>
+  <p class="purpose">One capture, two outputs. The insight slide.</p>
+  <div class="talk"><span class="lbl">Say</span><p>So here&#x27;s what we&#x27;d actually do. One capture, and we shoot it twice over. Once for the campaign, which is what runs as ads. Once for the proof, which is what lives on the product page and inside your emails. One shoot day covers both. And the reason those two belong together is that the person who makes the ad believable is the same person who makes your product page survive somebody checking the reviews. Then the best line a real customer gives us becomes the next hook we test. That last part is the only piece that compounds.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Which half matters more to you right now, the ads or the product page?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>Ads means lead with the campaign. Product page means lead with the proof. Either answer is a good one.</p></div>
+</section><section class="s" id="s7">
+  <div class="num">07 <span class="of">of 18</span></div>
+  <h2>Share a Scoop</h2>
+  <p class="head">Share a Scoop makes the product the invitation</p>
+  <p class="purpose">Hand the idea back to Ronin out loud.</p>
+  <div class="talk"><span class="lbl">Say</span><p>This one is Ronin&#x27;s, and I want to say that out loud with Jake in the room. He brought it to us on the first call, from a Share a Coke ad he saw on TikTok in class, and his line was that he hadn&#x27;t seen it done in the supplement space at all. I haven&#x27;t seen it either. Miguel and I added the picture on that call. The shaker, the person at the next rack, the handoff. And Ronin said one hundred percent. So the concept is yours. What we&#x27;re bringing is the shot list, the crew, and everything that happens after the shoot day.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Which product is the hero for this, and when is it actually back in stock?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>Do not build a spot around something nobody can buy. Tropical Sunrise reads out of stock on their site.</p></div>
+</section><section class="s" id="s8">
+  <div class="num">08 <span class="of">of 18</span></div>
+  <h2>Visual Examples</h2>
+  <p class="head">Direction frames first. The shoot makes them real.</p>
+  <p class="purpose">Show direction, not product. Call out the AI first.</p>
+  <div class="talk"><span class="lbl">Say</span><p>I&#x27;m going to call this out before either of you does. These four frames are AI generated. We made them so you can see the direction instead of me describing it, and none of them are the product. The product is the shoot. Ronin, you run ads, you&#x27;d spot it in two seconds, and I&#x27;d rather say it first. What&#x27;s real in them is the light, the framing, and the moment. So tell me which one feels most like your brand, and we&#x27;ll build the shot list around that one.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Which one of these four feels most like your brand?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>Their pick becomes the shot list. This is the easiest yes in the whole deck, use it to build momentum.</p></div>
+</section><section class="s" id="s9">
+  <div class="num">09 <span class="of">of 18</span></div>
+  <h2>What runs, what is missing</h2>
+  <p class="head">Athletes, product in hand, one person lit to hold attention</p>
+  <p class="purpose">Two boxes empty. Everything else is already his.</p>
+  <div class="talk"><span class="lbl">Say</span><p>This is our own work. Every frame on here is a job we shot. The Harper&#x27;s Bazaar feature with Venus and Serena, that&#x27;s the athlete lane. The Marriott film, which is the closest thing we have to a shaker pour, product in the hands of the person making it. Sheltair, one person lit so well you don&#x27;t need anything else in the frame. Dr. Biz Boom, a customer testimonial shot as a real production. And the product close ups. No stock, no renders. If you want the full cuts instead of the frames, I will send links right after this call.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>What are you using for email right now, and is the Meta pixel actually telling Meta when someone buys?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>If he says Klaviyo, confirm we are not asking for a login. If he does not know about the pixel, that is a real finding, not a gotcha.</p></div>
+</section><section class="s" id="s10">
+  <div class="num">10 <span class="of">of 18</span></div>
+  <h2>Content System</h2>
+  <p class="head">One or two days of filming feeds two to three months</p>
+  <p class="purpose">One or two days feeds a quarter.</p>
+  <div class="talk"><span class="lbl">Say</span><p>So the way we plan a shoot day is backwards from the outputs. We start with what you need to run and work back to the scenes. One hero spot. Three fifteen second cutdowns. Six short openers we can run against each other. Ten verticals for TikTok Shop and organic. Stills, which for you might be the one that matters most, because those replace the renders on your product pages. And then the label and the certificate on camera, which I haven&#x27;t seen filmed anywhere in your category. That last one costs nothing extra, because the crew is already standing there.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Is the For Her line part of this campaign, or are we focused on the training side first?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>For Her doubles the cast and the wardrobe. If it is in, the shoot day changes and so does the number.</p></div>
+</section><section class="s" id="s11">
+  <div class="num">11 <span class="of">of 18</span></div>
+  <h2>Nurture System</h2>
+  <p class="head">Klaviyo is yours. We just give it something to send.</p>
+  <p class="purpose">Klaviyo stays his. We just give it something to send.</p>
+  <div class="talk"><span class="lbl">Say</span><p>I want to be clear on this one. Ronin, you own Klaviyo and you keep owning it. We are not asking for a login. What we do is write the copy and hand you the footage and the stills that go inside the emails you already send. Six flows, and each one has one job. The welcome sequence earns the first order. The review request goes out at day seven on protein and pre workout, and day twenty one on creatine, because people judge a habit product over weeks. One ask, one link, no discount attached, because a discount teaches people to wait for the next one. If we reward a review with loyalty points instead, that review gets labeled as incentivized. That&#x27;s a rule, not a preference, and it&#x27;s your call whether the points stay in. And the day fourteen email is Share a Scoop as a real mechanic, not a slogan.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Who writes your emails today, and how often do they actually go out?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>If Ronin writes them himself between classes, the value of us writing them lands immediately.</p></div>
+</section><section class="s" id="s12">
+  <div class="num">12 <span class="of">of 18</span></div>
+  <h2>How you know what worked</h2>
+  <p class="head">Every video gets a name. The sale tells you which one.</p>
+  <p class="purpose">Six numbered boxes. Walk them left to right and point.</p>
+  <div class="talk"><span class="lbl">Say</span><p>This is the one slide with a picture, and I&#x27;m going to walk it left to right, because it&#x27;s simpler than it looks. Box one, every video we hand you gets its own name. Nothing fancy, just a label, like gym handoff fifteen second. Two, that name gets tucked inside the link on the ad. Your customer never sees it, it just rides along. Three, they click and land on your store, which is already yours. Four, they buy, and that name lands on the order with them. Five, once a month you get one page. So instead of me telling you Meta did four thousand dollars, I can tell you the gym handoff video did it and the rooftop one did nothing. Six, you keep what sold and we reshoot what didn&#x27;t. Ronin, is anybody reading numbers like this today, or is it more of a gut call right now?</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Is anybody reading numbers like this today, or is it more of a gut call right now?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>Gut call is the honest answer most founders give. Do not make him feel bad about it, that is the sale.</p></div>
+</section><section class="s" id="s13">
+  <div class="num">13 <span class="of">of 18</span></div>
+  <h2>Compliance Guardrails</h2>
+  <p class="head">Ten checks on every hook, every cut, every caption</p>
+  <p class="purpose">His reason for founding the company was platform bans. This is a selling point.</p>
+  <div class="talk"><span class="lbl">Say</span><p>Ronin, on the first call you told us you started this company because you were done getting accounts banned. That stuck with me. So I want you to see that we built the campaign inside the rules from the first hook, not as a cleanup pass afterward. Ten checks, and every line clears all ten before it ships. Here&#x27;s the part I actually like. The scoop handoff is one of the safest things you can put in a supplement ad, because there is no body on screen to compare anything to, and nothing on it makes a promise. Your idea is also your compliance strategy. That is rare.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>On the fighters. Do you have signed agreements with Christian, Manny and Cade, and do those cover paid ads, or only posting on your own page?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>This is the single biggest swing in the scope. Organic only means the whole cast changes. Get a real answer.</p></div>
+</section><section class="s" id="s14">
+  <div class="num">14 <span class="of">of 18</span></div>
+  <h2>Proof</h2>
+  <p class="head">Athletes, product in hand, one person lit to hold attention</p>
+  <p class="purpose">Our work, in their lanes. Not a reference board.</p>
+  <div class="talk"><span class="lbl">Say</span><p>This is our own work. Every frame on here is a job we shot. The Harper&#x27;s Bazaar feature with Venus and Serena, that&#x27;s the athlete lane. The Marriott film, which is the closest thing we have to a shaker pour, product in the hands of the person making it. Sheltair, one person lit so well you don&#x27;t need anything else in the frame. Dr. Biz Boom, a customer testimonial shot as a real production. And the product close ups. No stock, no renders. If you want the full cuts instead of the frames, I will send links right after this call.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Do you have a customer, not an athlete, who would go on camera and say what the product did for their routine?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>One real customer on camera is worth more than any athlete for the product page. Their site has zero reviews.</p></div>
+</section><section class="s" id="s15">
+  <div class="num">15 <span class="of">of 18</span></div>
+  <h2>Recommended Package</h2>
+  <p class="head">Two shoot days, twenty pieces, and a way to read them</p>
+  <p class="purpose">The one you recommend. Name the honest limit.</p>
+  <div class="talk"><span class="lbl">Say</span><p>Now, this is the one I&#x27;d recommend, and here&#x27;s why. You said a bundle, one or two days. That&#x27;s what this is. Two shoot days, about twenty pieces, and the tracking underneath so you can tell which ones did the work. Before I go further, what has to exist first for you, the ads or the product pages? Because that changes the order we shoot in. Now the honest part. We can build the creative and the measurement. We can&#x27;t promise you a sales number, and I&#x27;d be careful with anybody who does, because the ad budget, the offer, and the fulfillment are all yours. What I can promise is that thirty days after this goes live, you&#x27;ll know which piece sold instead of guessing.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>Where is the shoot happening, and can we get access? Your gym, a partner gym, or do we need to source one?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>Gold&#x27;s Gym Tampa is where the referral came from, but nobody has said that is the location. Access changes the day and the paperwork.</p></div>
+</section><section class="s" id="s16">
+  <div class="num">16 <span class="of">of 18</span></div>
+  <h2>Timeline</h2>
+  <p class="head">Pre production, shoot, rough edit in two weeks, then read it</p>
+  <p class="purpose">Every date is one we work to, not one we hope for.</p>
+  <div class="talk"><span class="lbl">Say</span><p>So here&#x27;s how it actually runs, in order. First week is pre production. Campaign board, shot list, cast, location, releases, and a claims pass on every line before anybody is on camera. Then the two shoot days, gym first and community second. The rough edit is back to you inside two weeks of the shoot day, and the first weekend doesn&#x27;t count toward those two weeks. Tracking and the flows are live within thirty days of signing, and your first scorecard lands at day thirty. That&#x27;s the schedule we work to.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>When do you want this live?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>If they name a date inside two weeks, say yes only if the hero product is in stock. Otherwise the ads run against nothing.</p></div>
+</section><section class="s" id="s17">
+  <div class="num">17 <span class="of">of 18</span></div>
+  <h2>Investment</h2>
+  <p class="head">Here is what each one builds.</p>
+  <p class="purpose">Build the value, then say the number. Steer to the middle.</p>
+  <div class="talk"><span class="lbl">Say</span><p>Three ways in, and I&#x27;ll tell you straight which one I think fits. The Creator Test is there if you want to see how we work before the bigger commitment. One day, six pieces, tracking on. The Launch Bundle is the one I&#x27;d recommend, and it&#x27;s what you described on the first call, a bundle, one or two days. Two shoot days, and here&#x27;s the part I want you to actually hear. That&#x27;s a hero spot, three cutdowns, six openers to test against each other, ten verticals, and stills that replace the renders on your product pages. From two days. That is two to three months of content, and a page at the end of the month that tells you which of those pieces sold. The monthly lane keeps it fed after that, and honestly I&#x27;d rather you not buy that today, because there&#x27;s nothing to maintain until the first campaign is out. Half at signing, half at delivery. And these are founding prices, because you&#x27;re the first client we run this package for.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>What are you comfortable putting behind these ads per month once they are live?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>DO NOT QUOTE THE PRICES YET. Dee has not signed off. Walk the value, and if they push for a yes on price, say you are confirming the final number and following up today.</p></div>
+</section><section class="s" id="s18">
+  <div class="num">18 <span class="of">of 18</span></div>
+  <h2>Next Step</h2>
+  <p class="head">Lock the scope this week. Shoot inside two weeks.</p>
+  <p class="purpose">One action, with a date.</p>
+  <div class="talk"><span class="lbl">Say</span><p>So the next step isn&#x27;t we&#x27;ll send you a proposal. You&#x27;ve waited a week for one and it&#x27;s in front of you. The next step is a scope lock. Today, you two pick the package and tell me which product is the hero. By Friday we lock cast and location. Does Friday actually work on your side, or is next week more honest? Then we shoot inside the two weeks after that. Three things I need back from you. The restock date on the hero product, because we&#x27;re not building a spot around something nobody can buy. Who holds the athletes&#x27; releases today, and whether anybody has talked to a school compliance office, because an athlete can license himself but he can&#x27;t license the school. And whether the creators behind christian15, manny15, and cade15 can appear in paid ads or only on your own page.</p></div>
+  <div class="ask"><span class="lbl">Ask</span><p>When you two decide to move forward, how does that work? Do you both sign, or does one of you handle it?</p></div>
+  <div class="listen"><span class="lbl">Listen for</span><p>This tells you who to follow up with tonight. Ask it before you hang up.</p></div>
+</section>
+
+<footer>
+  <p>The deck is at <a href="https://dmount48.github.io/valenco-share-a-scoop-k4m9/">https://dmount48.github.io/valenco-share-a-scoop-k4m9/</a>. Everything already revealed is at <a href="https://dmount48.github.io/valenco-share-a-scoop-k4m9/all.html">all.html</a>.</p>
+  <p>Anything wrong in here, tell Dee and it gets fixed.</p>
+</footer>
+</div>
+<a class="top" href="#">Top</a>
+</body>
+</html>
